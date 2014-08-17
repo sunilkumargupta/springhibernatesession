@@ -19,5 +19,5 @@
 		(e.g. d:\github\sunil> cd springhibernatesession)
 	e. List your repository.
 		(e.g. d:\github\sunil\springhibernatesession> dir)
-
+	f. Follow the tasks within your git repository or local repository.
 </pre>
