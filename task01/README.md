@@ -5,10 +5,12 @@
 
 3. Install maven and set path in environment variable.
 
-4. clone and run below sample program following given instruction, to test if your setup is all done.
+4. set proxy for maven (http://maven.apache.org/guides/mini/guide-proxies.html)
+
+5. clone and run below sample program following given instruction, to test if your setup is all done.
    https://github.com/sunilkumargupta/MenuApp
 
-5. we need to set proxy to work with our github account which I'll share offline.
+6. we need to set proxy to work with our github account which I'll share offline.
 
 
 </pre>
