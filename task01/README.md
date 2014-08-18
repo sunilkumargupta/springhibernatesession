@@ -1,7 +1,7 @@
 <pre>
 1. Create a GitHub account.
 
-2. Install GitHub Client and set path in environment variable.
+2. Install git (from installousappstore) and set path in environment variable.
 
 3. Install maven and set path in environment variable.
 
