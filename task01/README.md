@@ -9,14 +9,14 @@
    or same can be done through <proxies> configuration in below file 
    &lt;proxies>
     &lt;proxy>
-      &lt;id>optional</id>
-      &lt;active>true</active>
-      &lt;protocol>http</protocol>
-      &lt;username>sunil_gupta@peristent.co.in</username>
-      &lt;password>GGJHHJH</password>
-      &lt;host>ptproxy.persistent.co.in</host>
-      &lt;port>8080</port>
-      &lt;nonProxyHosts>local.net|some.host.com</nonProxyHosts>
+      &lt;id>optional&lt;/id>
+      &lt;active>true&lt;/active>
+      &lt;protocol>http&lt;/protocol>
+      &lt;username>user  &lt;/username>
+      &lt;password>GGJHHJ&lt;/password>
+      &lt;host>proxy&lt;/host>
+      &lt;port>8080&lt;/port>
+      &lt;nonProxyHosts>local.net|some.host.com&lt;/nonProxyHosts>
     &lt;/proxy>
     
   </proxies>
