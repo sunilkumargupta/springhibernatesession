@@ -1,4 +1,4 @@
-&lt;pre>
+<pre>
 Welcome ! to Introduction to Spring and Hibernate sessions.  
 
 1.	You must have received a WebEx invitation and link.
@@ -17,15 +17,15 @@ Task 01
    &lt;maven installed location>\apache-maven-3.0.4-bin\conf\settings.xml
 	   &lt;proxies>
 		&lt;proxy>
-		  &lt;id>optional</id>
-		  &lt;active>true</active>
-		  &lt;protocol>http</protocol>
-		  &lt;username>user  </username>
-		  &lt;password>GGJHHJ</password>
-		  &lt;host>proxy</host>
-		  &lt;port>8080</port>
-		  &lt;nonProxyHosts>local.net|some.host.com</nonProxyHosts>
-		</proxy>
+		  &lt;id>optional&lt;/id>
+		  &lt;active>true&lt;/active>
+		  &lt;protocol>http&lt;/protocol>
+		  &lt;username>user  &lt;/username>
+		  &lt;password>GGJHHJ&lt;/password>
+		  &lt;host>proxy&lt;/host>
+		  &lt;port>8080&lt;/port>
+		  &lt;nonProxyHosts>local.net|some.host.com&lt;/nonProxyHosts>
+		&lt;/proxy>
 	
 5. clone and run below sample program following given instruction in below URL, to test if your setup is all done.
    https://github.com/sunilkumargupta/MenuApp
@@ -38,8 +38,8 @@ Steps:
         c. userId and password might contain special characters so we need to encode email Id & password for setting proxy (you may use below link).
             http://www.url-encode-decode.com/
                                 e.g.
-                                user_user@persistent.co.in     =>  user_user%40persistent.co.in
-                                @#pass@#                                      =>  %40%23pass%40%23
+                                user_user@xyz.co.in     =>  user_user%40xyz.co.in
+                                @#pass@#                       =>  %40%23pass%40%23
         d. run the above batch file before working with github through command prompt
 
 
@@ -54,7 +54,7 @@ Steps:
 8. repository "https://github.com/sunilkumargupta/springhibernatesession" is going to be our main repository and all have to be sync with it.
         a.  Go to above repository.
         b.  Follow the instruction given in README.md within the same.
-        c.  It will help you forking my repository to yours and we’ll keep our repository always in sync.
+        c.  It will help you forking my repository to yours and weâ€™ll keep our repository always in sync.
 
 
 </pre>
