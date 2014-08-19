@@ -1,4 +1,4 @@
-&lt;pre>
+<pre>
 Welcome ! to Introduction to Spring and Hibernate sessions.  
 
 1.	You must have received a WebEx invitation and link.
@@ -54,7 +54,7 @@ Steps:
 8. repository "https://github.com/sunilkumargupta/springhibernatesession" is going to be our main repository and all have to be sync with it.
         a.  Go to above repository.
         b.  Follow the instruction given in README.md within the same.
-        c.  It will help you forking my repository to yours and we’ll keep our repository always in sync.
+        c.  It will help you forking my repository to yours and weâ€™ll keep our repository always in sync.
 
 
 </pre>
