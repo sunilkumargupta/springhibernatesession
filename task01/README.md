@@ -7,7 +7,7 @@
 
 4. set proxy for maven (http://maven.apache.org/guides/mini/guide-proxies.html)
    or same can be done through <proxies> configuration in below file 
-   <maven installed location>\apache-maven-3.0.4-bin\conf\settings.xml
+   &lt;maven installed location>\apache-maven-3.0.4-bin\conf\settings.xml
 
    &lt;proxies>
     &lt;proxy>
