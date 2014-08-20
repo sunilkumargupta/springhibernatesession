@@ -1,4 +1,3 @@
-<pre>
 Task02:
 -------
 1. Git commands.
@@ -9,4 +8,4 @@ Task02:
 6. Spring configuration file
 
 
-</pre>
+
