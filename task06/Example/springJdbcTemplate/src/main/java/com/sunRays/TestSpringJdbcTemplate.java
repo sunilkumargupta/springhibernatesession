@@ -14,8 +14,8 @@ public class TestSpringJdbcTemplate {
 		PersonService personService = (PersonService) context.getBean("personService");
 		
 		Person person = new Person();
-		person.setName("Alba");
-		person.setEmail("alba@gmail.com");
+		person.setName("sun");
+		person.setEmail("sunilgupta@gmail.com");
 		personService.addPerson(person);
 		System.out.println("Person : " + person + " added successfully");
 		

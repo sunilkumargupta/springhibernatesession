@@ -14,8 +14,8 @@ public class TestSpringHibernateDaoSupport {
 		PersonService personService = (PersonService) context.getBean("personService");
 		
 		Person person = new Person();
-		person.setName("Alba");
-		person.setEmail("alba@gmail.com");
+		person.setName("sun2");
+		person.setEmail("sunilGupta@gmail.com");
 		personService.addPerson(person);
 		System.out.println("Person : " + person + " added successfully");
 		

@@ -25,10 +25,10 @@
 	</bean>
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-		<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE" />
-		<property name="username" value="sun" />
-		<property name="password" value="sun" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/sunRays" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
 	</bean>
 	
 <!-- 	<bean id="dbUtil" class="com.sunRays.DbUtil" init-method="initialize"> -->

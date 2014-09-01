@@ -15,7 +15,7 @@ public class TestSpringJdbcDaoSupport {
 
 		Person person = new Person();
 		person.setName("sun");
-		person.setEmail("alba@gmail.com");
+		person.setEmail("sunilgupta@gmail.com");
 		personService.addPerson(person);
 		System.out.println("Person : " + person + " added successfully");
 
