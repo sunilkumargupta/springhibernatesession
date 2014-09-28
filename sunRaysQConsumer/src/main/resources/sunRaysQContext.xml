@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:amq="http://activemq.apache.org/schema/core"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+           http://www.springframework.org/schema/context 
+           http://www.springframework.org/schema/context/spring-context-3.2.xsd
+           http://www.springframework.org/schema/jms 
+           http://www.springframework.org/schema/jms/spring-jms-3.2.xsd
+           http://activemq.apache.org/schema/core 
+           http://activemq.apache.org/schema/core/activemq-core.xsd">
+           
+      <context:component-scan base-package="com.sunRays" />
+      <context:annotation-config/>
+
+      <!--  Create an embedded ActiveMQ Broker-->
+		<bean id="connectionFactory"  class="org.springframework.jms.connection.CachingConnectionFactory">
+		  <property name="targetConnectionFactory">
+		    <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+<!-- 		    	Use embedded MQ --><!-- 		       <property name="brokerURL" value="vm://embedded?broker.persistent=false"/> -->
+<!-- Use Personale MQ -->
+				 <property name="brokerURL" value="tcp://localhost:61616"/>
+		    </bean>
+		  </property>
+		</bean>
+     
+       <!-- define Queues/Topics-->
+       	<bean id="destination" class="org.apache.activemq.command.ActiveMQQueue">
+	        <constructor-arg value="sunRaysQ"/>
+	    </bean>
+	    
+	    <!-- Use JMS Template to get rid of connection setup /tear-down boiler-plate code -->
+	    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+	        <property name="connectionFactory" ref="connectionFactory" />
+	        <property name="defaultDestination" ref="destination" />
+	    </bean>
+	    
+	    <!-- Define Producer and Consumer beans to send and receive Messages  -->
+	    <bean id="springProducer" class="com.sunRays.services.ProducerService">
+	    </bean>
+	    <bean id="springConsumer" class="com.sunRays.services.ConsumerService">
+	    </bean>
+	    
+	    <!-- Define JMS Listener that listens to any Queue/Topic. On receiving new message, this will handover the messages configured listeners -->
+	    <jms:listener-container  connection-factory="connectionFactory">
+		     <jms:listener destination="sunRaysQ" ref="springConsumer"/>
+		</jms:listener-container>
+           
+</beans>
